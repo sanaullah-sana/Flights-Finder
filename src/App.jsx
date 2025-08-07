@@ -5,8 +5,11 @@ import SearchForm from "./components/SearchForm";
 import FlightCard from "./components/FlightCard";
 import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
+import Description from "./components/Description";
 
-const TOKEN = "1cxlh6veMpmNEFfYqIrcAO7RWZ2G";
+// This token expires every 30 minutes We can generate a new token from postman then the api will work again.
+const TOKEN = "NgIghFIExZURVfFVfGIGQAiFrwan";
+
 
 const App = () => {
   const [isRoundTrip, setIsRoundTrip] = useState(true);
@@ -97,7 +100,8 @@ const App = () => {
           )}
         </div>
       </div>
-
+   {/* Description Section */}
+   <Description />
       {/* FAQs Section */}
       <FAQ />
 
